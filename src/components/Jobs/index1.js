@@ -269,7 +269,7 @@ class Jobs extends Component {
         className="failure-image"
       />
       <h1 className="failure-heading">Oops! Something Went Wrong</h1>
-      <p classNames="failure-para">
+      <p className="failure-para">
         We cannot seem to find the page you are looking for.
       </p>
       <button className="retrybtn" type="button" onClick={this.retryFetch}>
@@ -279,7 +279,7 @@ class Jobs extends Component {
   )
 
   renderloader = () => (
-    <div className="loader-container" testid="loader">
+    <div className="loader-container" data-testid="loader">
       <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
     </div>
   )
@@ -348,7 +348,7 @@ class Jobs extends Component {
               />
               <button
                 type="button"
-                testid="searchButton"
+                data-testid="searchButton"
                 onClick={this.searchStart}
               >
                 <BsSearch className="search-icon" />

@@ -1,4 +1,4 @@
-import './index.css'
+// import './index.css'
 
 const SkillsCard = props => {
   const {skillDetails} = props
